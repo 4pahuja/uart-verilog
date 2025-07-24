@@ -1,18 +1,3 @@
-// EcoMender Bot : Task 2A - UART Receiver
-/*
-Instructions
--------------------
-Students are not allowed to make any changes in the Module declaration.
-
-This file is used to receive UART Rx datacount packet from receiver line and then update the rx_msg and rx_complete datacount lines.
-
-Recommended Quartus Version : 20.1
-The submitted project file must be 20.1 compatible as the evaluation will be done on Quartus Prime Lite 20.1.
-
-Warning: The error due to compatibility will not be entertained.
--------------------
-*/
-
 /*
 Module UART Receiver
 
@@ -35,15 +20,8 @@ module uart_rx(
     output reg rx_complete
     );
 
-//////////////////DO NOT MAKE ANY CHANGES ABOVE THIS LINE//////////////////
-/*
-# Team ID:          eYRC##1781
-# Theme:            EB
-# Author List:      Arnav Pahuja
-# Filename:         uart_rx.v
-# File Description: Implementation of UART reciever module
-# Global variables: count[3:0], datacount[3:0], result[8:0]
-*/
+// Global variables: count[3:0], datacount[3:0], result[8:0]
+
 reg [3:0] count;
 reg [3:0] datacount;
 reg [8:0] result;
@@ -124,10 +102,6 @@ else if (datacount == 4'b1010) begin
 end
 else count = 0;
 end
-// Add your code here....
-
-//////////////////DO NOT MAKE ANY CHANGES BELOW THIS LINE//////////////////
-
 
 endmodule
 
