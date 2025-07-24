@@ -7,8 +7,6 @@ module uart_tx(
     output reg tx_done
 );
 
-//////////////////DO NOT MAKE ANY CHANGES ABOVE THIS LINE//////////////////
-
 parameter IDLE = 1'b1;  
 parameter START_BIT = 1'b0; 
 parameter STOP_BIT = 1'b1;  
@@ -77,6 +75,4 @@ always @(posedge clk_3125) begin
         end
     end
 end
-
-//////////////////DO NOT MAKE ANY CHANGES BELOW THIS LINE//////////////////
 endmodule
